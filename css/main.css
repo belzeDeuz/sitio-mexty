@@ -349,3 +349,28 @@
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.modal-content {
+    border-radius: 10px;
+    border: 2px solid #A67C52;
+}
+
+.modal-header {
+    background-color: #8C1D40;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+    background-color: #F2F2F2;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+}
+
+.modal-body li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+

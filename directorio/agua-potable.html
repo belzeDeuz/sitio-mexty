@@ -78,7 +78,7 @@
                         <img src="../images/default-image.jpg" alt="Trámite">
                         <h5>Trámite</h5>
                         <p>Descripción del trámite</p>
-                        <button class="btn-ver-mas">Requisitos</button>
+                        <button class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalRequisitos">Requisitos</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -86,7 +86,7 @@
                         <img src="../images/default-image.jpg" alt="Trámite">
                         <h5>Trámite</h5>
                         <p>Descripción del trámite</p>
-                        <button class="btn-ver-mas">Requisitos</button>
+                        <button class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalRequisitos">Requisitos</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -94,7 +94,7 @@
                         <img src="../images/default-image.jpg" alt="Trámite">
                         <h5>Trámite</h5>
                         <p>Descripción del trámite</p>
-                        <button class="btn-ver-mas">Requisitos</button>
+                        <button class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalRequisitos">Requisitos</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -102,13 +102,50 @@
                         <img src="../images/default-image.jpg" alt="Trámite">
                         <h5>Trámite</h5>
                         <p>Descripción del trámite</p>
-                        <button class="btn-ver-mas">Requisitos</button>
+                        <button class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalRequisitos">Requisitos</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Información de contacto -->
+    <div class="container mt-4">
+        <h3 class="separator-title">Información de contacto</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-info">
+                    <p><strong>Responsable:</strong> Lic. Lorem Ipsum Dolor - Puesto</p>
+                    <p><img src="../images/icon-gps.png" class="icon"> C. Morelos 1, Centro, 47370 Mexicacán, Jal.</p>
+                    <p><img src="../images/icon-telefono.png" class="icon"> +52 344 702 0116</p>
+                    <p><img src="../images/icon-email.png" class="icon"> contacto@ejemplo.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalRequisitos" tabindex="-1" aria-labelledby="modalRequisitosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRequisitosLabel">Requisitos del Trámite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Documento oficial</li>
+                        <li>Fotografía reciente</li>
+                        <li>Comprobante de domicilio</li>
+                        <li>Pago de derechos</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
