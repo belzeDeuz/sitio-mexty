@@ -308,9 +308,21 @@
 }
 
 /* ============================
-   ESTILOS PARA TARJETAS EN MÓVILES
+   ESTILOS PARA MÓVILES
    ============================ */
    @media (max-width: 768px) {
+    .header-title h2 {
+        font-size: 18px;
+    }
+    
+    .header-login img {
+        height: 40px; /* Ajusta el tamaño si es necesario */
+    }
+
+    .header-login:hover img {
+        transform: scale(1.0); /* Aumenta ligeramente el tamaño de la imagen */
+    }
+    
     .card-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta dinámicamente */
@@ -337,7 +349,17 @@
         height: auto;
         object-fit: contain;
         border-radius: 8px;
-    }
+    }.separator-slogan {
+        font-size: 18px;
+   }
+
+    .separator-title {
+        font-size: 18px;
+   }
+
+
+
+
 }
 
 /* ============================
