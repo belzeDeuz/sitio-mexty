@@ -356,10 +356,6 @@
     .separator-title {
         font-size: 18px;
    }
-
-
-
-
 }
 
 /* ============================
@@ -373,6 +369,31 @@
     .card {
         width: 100%;
     }
+}
+
+.document-list {
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    padding-left: 0;
+    margin: 0;
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.document-list li {
+    margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+.document-list a {
+    display: block; /* Hace que el enlace ocupe toda la línea para mejor clicabilidad */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #0056b3; /* Color azul para los enlaces */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    text-align: left; /* Asegura que el texto del enlace también esté alineado a la izquierda */
+}
+
+.document-list a:hover {
+    color: #8C1D40; /* Color del hover acorde a la paleta de la página */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
 
