@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return ("ontouchstart" in window || navigator.maxTouchPoints);
     }
 
-    //Mostrar el menú en hover (solo en PC)
+    // Mostrar el menú en hover (solo en PC)
     if (!isTouchDevice()) {
         directorioDropdown.addEventListener("mouseenter", function () {
             this.classList.add("show");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    //Manejo del clic en el botón "Directorio"
+    // Manejo del clic en el botón "Directorio"
     directorioLink.addEventListener("click", function (event) {
         if (isTouchDevice()) {
             event.preventDefault(); // Evita la navegación inmediata
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (clickCount === 1) {
                 dropdownMenu.classList.toggle("show"); // Muestra el menú
             } else {
-                window.location.href = "/sitio-mexty/directorio/index.html"; // Redirige a la página del directorio
+                window.location.href = location.origin + "/sitio-mexty/directorio/index.html"; // Redirige a la página del directorio
             }
 
             // Reinicia el contador después de 1.5 segundos
@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    //Asegurar que los elementos del menú sigan funcionando correctamente
+    // Asegurar que los elementos del menú sigan funcionando correctamente
     dropdownMenu.addEventListener("click", function (event) {
         event.stopPropagation(); // Evita que se cierre el menú al hacer clic en un elemento
     });
 
-    //Cierra el menú si se hace clic fuera de él
+    // Cierra el menú si se hace clic fuera de él
     document.addEventListener("click", function (event) {
         if (!directorioDropdown.contains(event.target)) {
             dropdownMenu.classList.remove("show");
