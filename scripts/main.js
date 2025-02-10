@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (clickCount === 1) {
                 dropdownMenu.classList.toggle("show"); // Muestra el menú
             } else {
-                window.location.href = "/directorio/index.html"; // Redirige a la página del directorio
+                window.location.href = "./directorio/index.html"; // Redirige a la página del directorio
             }
 
             // Reinicia el contador después de 1.5 segundos
