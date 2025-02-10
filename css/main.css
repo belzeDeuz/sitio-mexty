@@ -28,9 +28,11 @@
 .header-title {
     text-align: left;
     flex-grow: 1; /* Permite que el título se mantenga centrado */
+    color: #611138;
 }
 
 .header-title h1 {
+    align-items: center;
     font-size: 32px;
     font-weight: bold;
     margin: 0;
@@ -44,7 +46,6 @@
 
 .header-title p {
     font-size: 16px;
-    color: #272727;
     margin: 0;
 }
 
@@ -293,6 +294,7 @@
     transition: transform 0.3s ease-in-out;
     min-width: 280px; /* Evita que se hagan demasiado pequeñas */
     max-width: 100%; /* Para que no excedan su espacio */
+    overflow: visible;
 }
 
 .card:hover {
@@ -305,6 +307,51 @@
     border-radius: 8px;
 }
 
+/* ============================
+   ESTILOS PARA TARJETAS EN MÓVILES
+   ============================ */
+   @media (max-width: 768px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta dinámicamente */
+        gap: 15px; /* Espaciado entre tarjetas */
+        justify-content: center;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 280px;
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+}
+
+/* ============================
+   ESTILOS PARA TARJETAS EN PANTALLAS PEQUEÑAS
+   ============================ */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    }
+
+    .card {
+        width: 100%;
+    }
+}
 
 
 /* ============================
