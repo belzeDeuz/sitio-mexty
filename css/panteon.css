@@ -1,0 +1,36 @@
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+.grave {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(140, 29, 64, 0.6);
+    border: 2px solid #A67C52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.grave:hover {
+    background-color: rgba(160, 32, 80, 0.8);
+}
+.grave.selected {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+#info-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #A67C52;
+    background-color: #F2F2F2;
+    display: none;
+}
