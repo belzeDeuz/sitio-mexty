@@ -359,6 +359,30 @@
     .separator-title {
         font-size: 20px;
     }
+
+    .more-news {
+        display: none; /* Oculta las noticias adicionales por defecto */
+    }
+
+    .toggle-news-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #8C1D40;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 10px auto;
+        transition: background 0.3s;
+    }
+
+    .toggle-news-btn:hover {
+        background-color: #A02050;
+    }
 }
 
 /* ============================
@@ -371,6 +395,28 @@
 
     .card {
         width: 100%;
+    }
+
+    .more-news {
+        display: none; /* Se ocultan por defecto */
+    }
+    .show-more-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #8C1D40;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 10px auto;
+        transition: background 0.3s;
+    }
+    .show-more-btn:hover {
+        background-color: #A02050;
     }
 }
 

@@ -97,21 +97,37 @@
         <p>Abierto toda la semana</p>
         <p>8:00 AM - 3:00 PM</p>
 
-        <!-- Mapa interactivo -->
         <div class="container text-center">
             <h3 class="separator-title">Mapa Interactivo del Panteón Municipal</h3>
             
             <div class="map-container">
-                <div class="grave" id="grave-a">Zona A</div>
-                <div class="grave" id="grave-b">Zona B</div>
-                <div class="grave" id="grave-c">Zona C</div>
-                <div class="grave" id="grave-d">Zona D</div>
+                <div class="zone" id="zone-a">Zona A</div>
+                <div class="zone" id="zone-b">Zona B</div>
+                <div class="zone" id="zone-c">Zona C</div>
+                <div class="zone" id="zone-d">Zona D</div>
             </div>
         
-            <!-- Información de la tumba seleccionada -->
-            <div id="info-box">
-                <h4 id="grave-title"></h4>
-                <p id="grave-description"></p>
+            <div id="tombs-container" class="tombs-container">
+                <h4 id="zone-title"></h4>
+                <div id="tombs"></div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="tombModal" tabindex="-1" aria-labelledby="tombModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tombModalLabel">Información de la tumba</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="tombImage" src="../images/default-image.jpg" alt="Tumba" class="img-fluid">
+                        <h4 id="deceasedName"></h4>
+                        <p><strong>Fecha de defunción:</strong> <span id="deathDate"></span></p>
+                        <p><strong>Leyenda:</strong> <span id="tombLegend"></span></p>
+                    </div>
+                </div>
             </div>
         </div>
 
