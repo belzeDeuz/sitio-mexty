@@ -34,12 +34,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-
-                    <!-- Directorio con Redirección y Hover -->
                     <li class="nav-item dropdown" id="directorioDropdown">
-                        <a class="nav-link dropdown-toggle active" href="./index.html"button">
-                            Directorio
-                        </a>
+                        <a class="nav-link dropdown-toggle active" href="./index.html" role="button">Directorio</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./servicios-medicos.html">Servicios Médicos</a></li>
                             <li><a class="dropdown-item" href="./agua-potable.html">Agua Potable</a></li>
@@ -58,50 +54,77 @@
     </nav>
 
     <!-- Contenido Principal -->
-    <div class="container text-center">
+    <div class="container text-center my-5">
         <h3 class="separator-title">Directorio municipal</h3>
-    
-        <div class="card-container">
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Servicios Médicos</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="./servicios-medicos.html" role="button">Ver más</a>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-3 justify-content-center">
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicios Médicos</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./servicios-medicos.html">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Agua Potable</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="./agua-potable.html" role="button">Ver más</a>
+
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Agua Potable</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./agua-potable.html">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Registro Civil</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="registro-civil.html" role="button">Ver más</a>
+
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Registro Civil</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./registro-civil.html">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Catastro</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="./catastro.html" role="button">Ver más</a>
+
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Catastro</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./catastro.html">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Tesorería</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="./tesoreria.html" role="button">Ver más</a>
+
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Tesorería</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./tesoreria.html">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../images/default-image.jpg" alt="Servicio">
-                <h5>Cultura</h5>
-                <p>Descripción breve</p>
-                <a class="btn-ver-mas" href="./cultura.html" role="button">Ver más</a>
+
+            <div class="col">
+                <div class="card h-100 text-center mx-auto" style="max-width: 320px;">
+                    <img src="../images/default-image.jpg" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultura</h5>
+                        <p class="card-text">Descripción breve</p>
+                        <a class="btn btn-ver-mas" href="./cultura.html">Ver más</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -124,6 +147,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
-<script src="../scripts/main.js"></script>
 </html>
