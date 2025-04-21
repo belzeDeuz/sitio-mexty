@@ -52,4 +52,37 @@ document.addEventListener("DOMContentLoaded", function () {
             dropdownMenu.classList.remove("show");
         }
     });
+
+    // Mostrar más tarjetas en dispositivos móviles
+    function setupShowMore(sectionClass) {
+        const showMoreBtn = document.querySelector(`.${sectionClass} .show-more-btn`);
+        const cards = document.querySelectorAll(`.${sectionClass} .card`);
+
+        if (window.innerWidth <= 768) {
+            showMoreBtn.classList.remove("d-none");
+            showMoreBtn.addEventListener("click", function () {
+                if (showMoreBtn.textContent === "↓") {
+                    cards.forEach((card, index) => {
+                        if (index >= 2) {
+                            card.classList.add("show");
+                        }
+                    });
+                    showMoreBtn.textContent = "↑";
+                } else {
+                    cards.forEach((card, index) => {
+                        if (index >= 2) {
+                            card.classList.remove("show");
+                        }
+                    });
+                    showMoreBtn.textContent = "↓";
+                }
+            });
+        }
+    }
+
+    setupShowMore("eventos");
+    setupShowMore("noticias");
+    setupShowMore("tramites");
+    setupShowMore("avisos");
+    setupShowMore("card-container");
 });
